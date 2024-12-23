@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://undacmic.github.io/'
 languageCode = 'en-us'
 title = '#undragos'
 theme = 'base-theme'
