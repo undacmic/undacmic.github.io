@@ -1,0 +1,36 @@
+body {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.site-title {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.pill {
+  font-size: 12px;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background-color: #dddddd;
+}
+
+.pill:hover {
+  background-color: #cccccc;
+}

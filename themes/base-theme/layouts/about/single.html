@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <section id="content">
+
+    <h2 style="margin-bottom: 0;">{{ .Title }}</h2>
+    <span><strong>Last updated: </strong> {{ .Date | time.Format ":date_full" }}</span>
+
+    <div style="margin-top: 30px;">
+      {{ .Content}}
+    </div>
+
+  </section>
+{{ end }}

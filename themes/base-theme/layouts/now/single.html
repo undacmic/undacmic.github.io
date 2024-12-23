@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <section id="content">
+
+      <h2 style="margin-bottom: 0;">{{ .Title }}</h2>
+      <span><strong>Last updated: </strong> {{ .Date | time.Format ":date_full" }}</span>
+
+      <div style="display: flex;">
+        <div style="margin-top: 30px; display: flex; align-items: center;">
+          {{ .Content}}
+        </div>
+        <div style="display: flex; align-content: center; justify-content: left;">
+          <img  src="/logo.png" style="width: 300px;height: auto;"/>
+        </div>
+      </div>
+      <blockquote>
+        {{":bulb: Inspired by Derek Sivers' **[/now](https://sive.rs/now2)**" | .RenderString }}
+      </blockquote>
+  </section>
+{{ end }}

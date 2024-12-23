@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'dragos.cpp'
+
+
+
+[taxonomies]
+  tag = 'tags'
+
+[[menus.home]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.nav]]
+name = 'Articles'
+pageRef = '/posts'
+weight = 20
+
+[[menus.nav]]
+name = 'About'
+pageRef = '/about'
+weight = 30
+
+[[menus.nav]]
+name = 'Now'
+pageRef = '/now'
+weight = 40
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

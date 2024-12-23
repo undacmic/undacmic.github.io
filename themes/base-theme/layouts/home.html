@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <section id="content">
+
+      {{ .Content }}
+      <ul>
+      {{ range where .Site.RegularPages "Section" "posts" }}
+      <li>
+        {{ printf "%04d%02d%02d" .Date.Year .Date.Month .Date.Day }} - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> 
+      </li>
+        <!-- <strong><a href="{{ .RelPermalink }}" style="text-decoration: none;">{{ .LinkTitle }}</a> - {{ .Date | time.Format ":date_medium" }} {{ range (.GetTerms "tags") }}<span class="pill">{{ .LinkTitle }}</span>{{ end }}</strong> -->
+      {{ end }}
+      </ul>
+
+      <blockquote>
+        {{ ":label: If you are interested in a specific topic, please use" | .RenderString }} <a href="/tags">this page</a>.
+      </blockquote>
+  </section>
+{{ end }}

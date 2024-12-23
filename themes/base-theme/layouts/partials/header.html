@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        <li class="site-title">
+            <strong>
+                <a style="text-decoration: none; cursor: pointer;" href="{{ .Site.BaseURL }}"><span style="color: green;">#DEFINE</span> undragos</a>
+            </strong>
+        </li>
+    </ul>
+
+    <ul>
+        {{ range $.Site.Menus.nav }}
+            <li><a class="nav-link" style="text-decoration: none; cursor: pointer;" data-scroll href="{{ .PageRef }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section id="content">
+
+  <h2 style="margin-bottom: 0;">{{ .Title }}</h2>
+  <span>Last updated: {{ .Date | time.Format ":date_full" }}</span>
+  <br />
+  <span> Tags: {{ range (.GetTerms "tags") }}<span class="pill"><strong>{{ .LinkTitle }}</strong></span>{{ end }}</span>
+
+  <div style="margin-top: 30px;">
+    {{ .Content}}
+  </div>
+
+</section>
+{{ end }}

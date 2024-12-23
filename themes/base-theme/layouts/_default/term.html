@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+<ul>
+  {{ range .Data.Pages }}
+  <li>
+    {{ printf "%04d%02d%02d" .Date.Year .Date.Month .Date.Day }} - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> 
+  </li>
+  {{ end }}
+</ul>
+
+<blockquote>
+    {{ ":label: If you are interested in a specific topic, please use" | .RenderString }} <a href="/tags">this page</a>.
+  </blockquote>
+{{ end }}

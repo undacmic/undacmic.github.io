@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '#undragos'
+theme = 'base-theme'
+enableEmoji = true
+
+[taxonomies]
+  tag = 'tags'
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
