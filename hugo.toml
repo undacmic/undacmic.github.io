@@ -4,9 +4,18 @@ title = '#undragos'
 theme = 'base-theme'
 enableEmoji = true
 relativeURLs = true
+enableRobotsTXT = true
+
 [taxonomies]
   tag = 'tags'
 
-
 [markup]
   defaultMarkdownHandler = 'goldmark'
+
+copyright = "2024 Dragos Ioana All rights reserved"
+[Author]
+    name = "Dragos Ioana"
+    email  = "dragosioana20@gmail.com"
+
+[params]
+  Description = "A personal blog by Dragos Ioana which focuses on creativity and software development" 
