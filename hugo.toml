@@ -10,7 +10,13 @@ enableRobotsTXT = true
   tag = 'tags'
 
 [markup]
-  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
 copyright = "2024 Dragos Ioana All rights reserved"
 [Author]
@@ -18,4 +24,4 @@ copyright = "2024 Dragos Ioana All rights reserved"
     email  = "dragosioana20@gmail.com"
 
 [params]
-  Description = "A personal blog by Dragos Ioana which focuses on creativity and software development" 
+  description = "A personal blog by Dragos Ioana which focuses on creativity and software development" 

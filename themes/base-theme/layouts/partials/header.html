@@ -1,15 +1,25 @@
+<span class="decor"></span>
 <nav>
     <ul>
         <li class="site-title">
             <strong>
-                <a style="text-decoration: none; cursor: pointer;" href="{{ .Site.BaseURL }}"><span style="color: green;">#DEFINE</span> undragos</a>
+                <a style="text-decoration: none; cursor: pointer;" href="{{ .Site.BaseURL }}">
+                    <span style="color: green!important;">#DEFINE</span>
+                    <span style="color: white!important;">undragos</span>
+                </a>
             </strong>
         </li>
     </ul>
 
-    <ul>
+    <ul style="display: flex; gap: 10px;">
         {{ range $.Site.Menus.nav }}
-            <li><a class="nav-link" style="text-decoration: none; cursor: pointer;" data-scroll href="{{ .PageRef }}">{{ .Name }}</a></li>
+            <strong>
+                <li>
+                    <a class="nav-link" style="text-decoration: none; cursor: pointer;" data-scroll href="{{ .PageRef }}">
+                        {{ .Name }}
+                    </a>
+                </li>
+            </strong>
         {{ end }}
     </ul>
 </nav>
