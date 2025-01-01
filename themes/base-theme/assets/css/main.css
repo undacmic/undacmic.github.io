@@ -78,11 +78,12 @@ code {
   color: white!important;
 }
 
-code[data-lang]::after {
-  content: attr(data-lang);
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
+pre::after {
+  content: "ceva";
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
   background-color: #B2C9AD;
   color: #66785F;
   font-size: 12px;
@@ -97,4 +98,5 @@ pre {
   background-color: #4B5945!important;
   color: white!important;
   position: relative;
+  overflow: auto;
 }
